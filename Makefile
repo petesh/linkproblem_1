@@ -12,4 +12,4 @@ libtest.o: libtest.c
 	$(COMPILE.c) $< -fPIC -o $@
 
 clean:
-	rm *.a *.o
+	rm -f *.a *.o test
