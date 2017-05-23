@@ -1,6 +1,6 @@
 
 test: test.o libtest.a
-	$(LINK.C) $< -o $@
+	$(LINK.C) $< -o $@ -L. -ltest
 
 test.o: test.cpp libtest.h
 	$(COMPILE.C) $< -o $@
